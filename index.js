@@ -67,12 +67,7 @@ function checkIfAnyMovieHasRating(movies, rating = "G") {
   if(!movies.length) {
     throw "Movies array is empty"
   }
-  try {
-   result = movies.some((movie) => movie.rated === rating)
-  }
-  catch (error) {
-    console.log(error)
-  }
+  result = movies.some((movie) => movie.rated === rating)
   return result;
 }
 
