@@ -35,12 +35,7 @@ function getAllMovieTitles(movies) {
   if(!movies.length) {
     throw "Movies array is empty"
   }
-  try {
    result = movies.map(movie => movie.title)
-  }
-  catch (error) {
-    console.log(error)
-  }
   return result;
 }
 
